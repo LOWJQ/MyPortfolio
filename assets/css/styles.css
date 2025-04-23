@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.7;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }  
+  
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: #212529;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+  
+  /*setting for the navigation and make it fixed so always appear at the top of the screen*/
+  nav {
+    background-color: azure;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  nav .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .nav-content .logo a {
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 500;
+    color: #4070f4;
+  }
+
+  .nav-content .nav-link {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-content .nav-link li {
+    list-style: none;
+    margin: 0 8px;
+  }
+  
+  .nav-link li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0e2431;
+    padding: 10px 4px;
+  }
+  
+  .nav-link li a:hover {
+    color: #4070f4;
+  }
+
+  /*the general setting for all the sectiion including the height and the width*/
+  .section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }  
+
+  /*the specific setting for the home section where unique background image are used*/
+  #home {
+    display: flex;
+    justify-content: center;      
+    align-items: center;    
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    flex-direction: column;
+  }
+  
+  .intro {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  /*the setting for the footer that provide the social media link*/
+  #home .footer {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0px);
+    width: 100%;
+    text-align: right;
+    padding: 10px 0;
+  }  
+
+  /*the css for the social media by using the external link for the picture and some of the pre-defined setting*/
+  .fa {
+    padding: 20px;
+    margin: auto;
+    margin-right: 8px;
+    font-size: 30px;
+    width: 50px;
+    text-align: right;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  /*the background css for all other section other than home section*/
+  #aboutme, #skills, #projects, #contact{
+    background-color:#f0f0f0;
+  }
+  
+  /*the container used to align and arrange the item orderly to look clean*/
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }  
+
+  /*the image frame for the personal picture*/
+  .image-frame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    border: 10px solid #ffffff;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: #f0f0f0;
+    border-radius: 15px;
+    max-width: 100%;
+  }  
+
+  /*the specific css setting for the 3 pet picture that is group together*/
+  .image-row {
+    display: flex;
+    gap: 10px; 
+  }
+  
+  /*css setting to make the image does not too large*/
+  .image-frame img {
+    max-height: 92vh;
+    max-width: 100%;
+    display: block;
+    border-radius: 6px;
+  }
+
+  /*css setting to adjust the arrangement of the graphic outside of personal picture*/
+  /*make the text stay at middle of the remaining space*/
+  .content{
+    margin-top: 100px;
+    text-align: center;
+    flex-direction: column;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*css setting for the size of hte3 image to be consisten*/
+  .content img{
+    max-height: 40vh;
+  }
+  
+  /*the css setting for the table that show my education experience*/
+  .education-table {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  /*the css setting for the link that is giving the information of the education institution*/
+  .education-table a {
+    color: inherit;           
+    text-decoration: none;    
+    font-weight: normal;      
+  }
+
+  .education-table a:hover{
+    text-decoration: underline;
+  }
+
+  .education-table th,
+  .education-table td {
+    padding: 16px 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .education-table thead {
+    background-color: #4070f4;
+    color: #fff;
+  }
+  
+  .education-table tbody tr:hover {
+    background-color: #e2e8f0;
+  }
+  
+  /*the css setting for the container of the 2 charts*/
+  .chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+  }
+    
+  /*the css setting for the chart*/
+  .chart {
+    flex: 1 1 300px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 35px;
+    padding: 2rem;
+    border: 1px solid #f49131;
+    border-radius: 1rem;
+    background: #251c35;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+  }  
+
+  /*the second container for the specific use of project section*/
+  .container2{
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+  }
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+  }
+  
+  .project-article{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 1.5rem;
+  }  
+
+  .project-data {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: hsl(0, 10%, 86%);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 1s .3s;
+  }
+  
+  .project-description{
+    display: block;
+    font-size: .813rem;
+    margin-bottom: .25rem;
+  }
+
+  .project-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 15%);
+    margin-bottom: .75rem;
+  }
+
+  .project-button{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(82, 60%, 28%);
+    
+  }
+
+  .project-button:hover{
+    text-decoration: underline;
+  }
+
+  /*the css setting in order to show the information that is hidden unless the user pointer stay at the project picture*/
+  .project-article:hover .project-data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+
+  .project-article:hover{
+    overflow: visible;
+  }
+
+  .project-article:not(:hover){
+    overflow: visible;
+  }
+
+  .project-article:not(:hover) .project-data{
+    animation: show-overflow 1s forwards;
+  }
+
+  @keyframes show-data{
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+  }
+
+  @keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+  }
+
+  @keyframes remove-data{
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateX(-10rem);
+    }
+    100%{
+        transform: translateX(.5rem);
+    }
+  }
+
+  @keyframes show-overflow{
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+  }
+
+  /*the css setting for the reminder of way to show the hidden information about the project*/
+  .project-hint {
+    margin-top: 3.5rem;
+    font-size: 1.2rem;
+    color: #555;
+    background-color: #f5f5f5;
+    padding: 1rem 2rem;
+    border-left: 6px solid #4070f4;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    font-style: italic;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*the css setting for the contact form that is allow user to key in their contact information*/
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #4070f4;
+    outline: none;
+    box-shadow: 0 0 5px rgba(64, 112, 244, 0.4);
+  }
+  
+  .contact-form button {
+    padding: 12px;
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #2e5ad6;
+  }
+  
+  
+  
+  
+
+
+
+  

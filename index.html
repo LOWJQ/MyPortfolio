@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jia's Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- The navigation that provide menu which are home, aboutme, skills, projects and contact to redirect to certain section-->
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="#home">JIA'S PORTFOLIO</a>
+      </div>
+      <ul class="nav-link">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--The home section which display name, social media links and so on-->
+  <section id="home" class="section">
+    <div class="intro">
+      <h1>I'M LOW JIA QING</h1>
+      <h1>WELCOME TO MY PORTFOLIO</h1>
+    </div>
+    <div class="footer">
+      <!--My social media link which are facebook, linkedin and instagram -->
+      <a href="https://www.facebook.com/share/18zGCpQvkW/" target="_blank" class="fa fa-facebook"></a>
+      <a href="https://www.linkedin.com/in/low-jia-qing-a36442298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/jiaqing0428/?igsh=ZjRuNzBqOTYxa25u#" target="_blank" class="fa fa-instagram"></a>
+    </div>
+  </section>
+
+  <!--The aboutme section which display personal picture and information about myself-->
+  <section id="aboutme" class="section">
+    <div class="container">
+    <div class="image-frame">
+      <img src="assets/images/Pic.jpg" alt="Framed Image">
+    </div>    
+    <div class="content">
+      <h1>My name is Low Jia Qing</h1>
+      <h2>I am currently a second-year Bachelor of Software Engineering student at UPM.</h2>
+      <h2>I am Malaysian and born in Mersing, Johor.</h2>
+      <h2>My hobby is watching drama.</h2>
+      <h2>I have one dog and one cat and their names are Mimi and Meimei.</h2>     
+      <div class="image-frame">
+        <div class="image-row">
+          <img src="assets/images/mimi.jpg">
+          <img src="assets/images/Mimi&Meimei.jpg">
+          <img src="assets/images/meimei.jpg">
+        </div>
+      </div> 
+    </div>
+    </div>
+
+    <!--Another section of aboutme that introduce about my education background-->
+    <div class="container">
+      <div class="content">
+        <h2>My Education</h2>
+        <!--A table that consists of 2 columns and 5 rows-->
+        <!--The columns are education level and corresponding education institution-->
+        <!--And there are total 4 education level from primary school to university-->
+        <table class="education-table">
+          <thead>
+            <tr>
+              <th>Education Level</th>
+              <th>Education Institution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Primary School</td>
+              <!--provide link for the information of the institution-->
+              <td><a href="https://www.apac.com.my/jbc4004-sjkc-pai-chee.html" target="_blank">SJKC Pai Chee</a></td>
+            </tr>
+            <tr>
+              <td>Secondary School</td>
+              <td><a href="https://www.apac.com.my/jeb4044-smk-sri-mersing.html" target="_blank">SMK Sri Mersing</a></td>
+            </tr>
+            <tr>
+              <td>Matriculation</td>
+              <td><a href="https://en.wikipedia.org/wiki/Johor_Matriculation_College" target="_blank">Kolej Matrikulasi Johor</a></td>
+            </tr>
+            <tr>
+              <td>University</td>
+              <td><a href="https://en.wikipedia.org/wiki/University_of_Putra_Malaysia" target="_blank">University Putra Malaysia</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!--the skills section which display my skills which are programming language and human language-->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="content">
+        <h1>My Skills</h1>
+        <!--using 2 chart to display 2 area of my skills-->
+        <div class="chart-container">
+          <div class="chart">
+            <canvas id="barchart" width="400" height="400"></canvas>
+          </div>
+          <div class="chart">
+            <canvas id="barchart2" width="400" height="400"></canvas>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <!--the project section which display my past project and description, github repository and other information are provided-->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="content">
+        <h1>My Projects</h1>  
+      </div>
+    </div>  
+
+    <div class="container2">
+      <div class="project-container">
+        <article class="project-article">
+          <img src="assets/images/project1.png" alt="image" class="project-img">
+
+          <div class="project-data">
+            <span class="project-description">A secure platform for private and protected online meetings.</span>
+            <h2 class="project-title">SecureBitSpace</h2>
+            <a href="https://github.com/LOWJQ/BitByBit-repo" target="_blank" class="project-button">View Source Code</a>
+            <a href="https://youtu.be/L6Byb_1L95E" target="_blank" class="project-button"><br>Demo Video</a>
+          </div>
+        </article>
+
+        <article class="project-article">
+          <img src="assets/images/project2.png" alt="image2" class="project-img">
+
+          <div class="project-data">
+            <span class="project-description">A website to simplify student cab bookings.</span>
+            <h2 class="project-title">StudentCar Ordering System</h2>
+            <a href="https://github.com/LOWJQ/StudentCar-Booking-System-UPM" target="_blank" class="project-button">View Source Code</a>
+          </div>
+        </article>
+      </div>
+
+      <!--a information message to remain user to use their mouse to visible the information that is hidden-->
+      <h2 class="project-hint">
+        Move your pointer to the picture for more information about the project
+      </h2>
+    </div>
+  </section>
+
+  <!--the contact section where a form is provided for user to give me their contact information-->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="content">
+        <h1>Contact Me</h1>
+        <form class="contact-form" action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>      
+    </div>  
+  </section>
+
+  <!--using the framework of chart.js to produce chart-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
